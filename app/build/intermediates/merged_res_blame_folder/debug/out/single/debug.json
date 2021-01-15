@@ -116,12 +116,12 @@
         "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable_speechbubble_top.xml.flat",
         "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\drawable\\speechbubble_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",

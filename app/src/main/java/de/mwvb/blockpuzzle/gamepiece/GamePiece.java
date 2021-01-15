@@ -51,11 +51,6 @@ public class GamePiece {
         this.name = name;
     }
 
-    // 3x3 and X game pieces are called big blocks
-    public boolean isBigBlock() {
-        return name.startsWith("3x3") || name.startsWith("X");
-    }
-
     public boolean filled(int x, int y) {
         return matrix[x][y] != 0;
     }
@@ -81,113 +76,6 @@ public class GamePiece {
                 }
             }
         }
-    }
-
-    public GamePiece rotateToLeft() {
-        rotateToRight();
-        rotateToRight();
-        rotateToRight();
-        return this;
-    }
-
-    public GamePiece rotateToRight() {
-        // Kein Bock einen Algo zu programmieren. Ist immer eine 5x5 Matrix.
-        // inneres Quadrat drehen
-        transfer(1, 1, 3, 1);
-        transfer(2, 1, 3, 2);
-        transfer(3, 1, 3, 3);
-        transfer(3, 2, 2, 3);
-        transfer(3, 3, 1, 3);
-        transfer(2, 3, 1, 2);
-        transfer(1, 3, 1, 1);
-        transfer(1, 2, 2, 1);
-        // äußeres Quadrat drehen
-        transfer(0, 0, 4, 0);
-        transfer(1, 0, 4, 1);
-        transfer(2, 0, 4, 2);
-        transfer(3, 0, 4, 3);
-        transfer(4, 0, 4, 4);
-        transfer(4, 1, 3, 4);
-        transfer(4, 2, 2, 4);
-        transfer(4, 3, 1, 4);
-        transfer(4, 4, 0, 4);
-        transfer(3, 4, 0, 3);
-        transfer(2, 4, 0, 2);
-        transfer(1, 4, 0, 1);
-        transfer(0, 4, 0, 0);
-        transfer(0, 3, 1, 0);
-        transfer(0, 2, 2, 0);
-        transfer(0, 1, 3, 0);
-        // Mittleres Feld übertragen (dreht sich nicht)
-        transfer(2, 2, 2, 2);
-        // Zurückübertragen
-        for (int x = 0; x < 5; x++) {
-            System.arraycopy(neu[x], 0, matrix[x], 0, 5);
-        }
-
-        // Special handling for game pieces J and L
-        String def = getStringPresentation(this);
-        final String defJ =  ".....|.7...|.777.|.....|.....|";
-        final String defL =  ".....|...7.|.777.|.....|.....|";
-        if (defJ.equals(def)) {
-            reverse(defL);
-        } else if (defL.equals(def)) {
-            reverse(defJ);
-        }
-        final String defS =  ".....|.....|..55.|.55..|.....|";
-        final String defZ =  ".....|.....|.55..|..55.|.....|";
-        if (defS.equals(def)) {
-            reverse(defZ);
-        } else if (defZ.equals(def)) {
-            reverse(defS);
-        }
-
-        return this;
-    }
-
-    private void reverse(String def) {
-        int i = 0;
-        for (int y = 0; y < GamePiece.max; y++) {
-            for (int x = 0; x < GamePiece.max; x++) {
-                char c = def.charAt(i++);
-                if (c == '5') {
-                    setBlockType(x, y, 5);
-                } else if (c == '6') {
-                    setBlockType(x, y, 6);
-                } else if (c == '7') {
-                    setBlockType(x, y, 7);
-                } else {
-                    setBlockType(x, y, 0);
-                }
-            }
-            i++; // jump over "|"
-        }
-    }
-
-    private static String getStringPresentation(GamePiece p) {
-        StringBuilder ret = new StringBuilder();
-        for (int y = 0; y < GamePiece.max; y++) {
-            for (int x = 0; x < GamePiece.max; x++) {
-                final int blockType = p.getBlockType(x, y);
-                if (blockType == 0) {
-                    ret.append('.');
-                } else if (blockType == 5) {
-                    ret.append('5');
-                } else if (blockType == 6) {
-                    ret.append('6');
-                } else if (blockType == 7) {
-                    ret.append('7');
-                } else {
-                    ret.append('?');
-                }
-            }
-            ret.append("|");
-        }
-        return ret.toString();
-    }
-
-    private void transfer(int sx, int sy, int tx, int ty) {
-        neu[tx][ty] = matrix[sx][sy];
     }
 
     public int getMinX() {

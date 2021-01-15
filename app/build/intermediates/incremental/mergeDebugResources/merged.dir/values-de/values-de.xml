@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Zur Startseite"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Nach oben"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Weitere Optionen"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Fertig"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Alle anzeigen"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"App auswählen"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"AUS"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AN"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Strg +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Löschen"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Eingabetaste"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Funktionstaste +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta-Taste +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Umschalttaste +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Leertaste"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym-Taste +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menütaste +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Suchen…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Suchanfrage löschen"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Suchanfrage"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Suche"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Anfrage senden"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Sprachsuche"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Teilen mit"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Mit <ns1:g id="APPLICATION_NAME">%s</ns1:g> teilen"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Minimieren"</string>
+    <string name="alpha">alpha</string>
+    <string name="app_name"><font size="18"><b>Block Puzzle</b></font></string>
+    <string name="backFromDeathStar">Roter Alarm! Captain, alle Reaktoren zerstört. Die Explosion des Todessterns hat uns jedoch wieder in die Y Galaxie katapultiert. Immerhin haben wir die Erde gerettet. Weiter geht\'s mit der Befreiung der Planeten von der Orange Union.</string>
+    <string name="bayern">Oberbayern</string>
+    <string name="beta">beta</string>
+    <string name="beverlyHills">Beverly Hills</string>
+    <string name="blockPuzzle">Block Puzzle</string>
+    <string name="brandenburg">Brandenburg</string>
+    <string name="continue1">Weiter</string>
+    <string name="copied">Kopiert.</string>
+    <string name="copy">Kopiere</string>
+    <string name="daily1">Tag 1</string>
+    <string name="daily2">Tag 2</string>
+    <string name="daily3">Tag 3</string>
+    <string name="daily4">Tag 4</string>
+    <string name="daily5">Tag 5</string>
+    <string name="daily6">Tag 6</string>
+    <string name="daily7">Tag 7</string>
+    <string name="dataexchange">Datenaustausch</string>
+    <string name="dataexchangeInfo">Tausche hier Deinen Spielstand mit anderen Spielern aus. Kopiere den Spielstand des aktuellen Quadranten und sende diesen an andere Spieler, z.B. via WhatsApp. Kopiere den von anderen Spielern gesendeten Spielstand und drücke Einfügen.</string>
+    <string name="deathStar">Todesstern</string>
+    <string name="deathStarDestroyed">+Letzter Reaktor zerstört!</string>
+    <string name="deathStarGame1">Todesstern Reaktor 1</string>
+    <string name="deathStarGame2">Todesstern Reaktor 2</string>
+    <string name="deathStarGame3">Todesstern Reaktor 3</string>
+    <string name="deathStarGames123">Reaktoren 1 - 3</string>
+    <string name="defeatedEnemy">+Gegner geschlagen! Territorium befreit!</string>
+    <string name="delta">delta</string>
+    <string name="developer">Developer</string>
+    <string name="empty"/>
+    <string name="enterPlayerName">Spielername eingeben</string>
+    <string name="gameOverScore1">Game over! (XX Punkt)</string>
+    <string name="gameOverScore2">Game over! (XX Punkte)</string>
+    <string name="gamma">gamma</string>
+    <string name="gehtNicht">Geht nicht!</string>
+    <string name="giantPlanet">Riesenplanet</string>
+    <string name="giveUpDeathStarGame">Aufgeben</string>
+    <string name="giveUpDeathStarGameQuestion">Todessternzerstörung aufgeben und zurück in die Y Galaxie?</string>
+    <string name="gravitation">Gravitation</string>
+    <string name="infotext">Roter Alarm! Captain, unser Raumschiff wurde durch eine Weltraumanomalie in eine unbekannte Galaxie katapultiert. Wie finden wir nur zurück? Aber erst müssen wir die Planeten von der Orange Union befreien. In unserem friedlichen Zeitalter werden Konflikte durchs Spielen von Block Puzzle ausgetragen. Los geht\'s.</string>
+    <string name="leaveShipInSpace">Wirklich Spiel beenden?</string>
+    <string name="liberatePlanet_BlockPuzzle">Planet befreien (Block Puzzle)</string>
+    <string name="liberatedPlanetByYou">von Dir befreiter Planet</string>
+    <string name="liberatedTerritoryByYou">von Dir befreites Territorium</string>
+    <string name="lowerSaxony">Niedersachsen</string>
+    <string name="luxemburg">Luxemburg West</string>
+    <string name="milkyWayAlertInfotext">Roter Alarm! Captain, unser Raumschiff wurde durch eine Weltraumanomalie in die Milchstraße katapultiert. Achtung: Unser Heimatsonnensystem wird von einem Todesstern bedroht. Wir müssen diesen ausschalten! Dies geht nur wenn wir simultan die drei Reaktoren zerstören.</string>
+    <string name="moon">Mond</string>
+    <string name="move">Move</string>
+    <string name="moves">Moves</string>
+    <string name="mute">Stumm</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Nach oben"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Navigationsleiste öffnen"</string>
+    <string name="navigation">Navigation</string>
+    <string name="neuesSpiel">Neues Spiel</string>
+    <string name="newLiberationAttempt">Erneuten Befreiungsversuch starten</string>
+    <string name="newLiberationAttemptQuestion">Erneuten Befreiungsversuch starten?</string>
+    <string name="noMoreGamePieces">Spielsteine aufgebraucht! (Spielende)</string>
+    <string name="northernTerritory">Nordhalbkugel</string>
+    <string name="nothingToInsert">Nichts einzufügen.</string>
+    <string name="oldGame">Altes Spiel</string>
+    <string name="orangeUnion">Orange Union</string>
+    <string name="paste">Einfügen</string>
+    <string name="planet">Planet</string>
+    <string name="planetLiberated">+Planet befreit!</string>
+    <string name="planetNeedsNoLiberation">Planet benötigt keine Befreiung</string>
+    <string name="planetOccByP1">Planet von %1$s besetzt</string>
+    <string name="playerName">Spielername</string>
+    <string name="position">Position</string>
+    <string name="putData_checksumMismatch">Manipulierter Spielstand wurde nicht übernommen!</string>
+    <string name="putData_formatError1">Verstehe Daten nicht!</string>
+    <string name="putData_formatError2">Daten sind nicht kompatibel! (falsche Version)</string>
+    <string name="putData_makesNoSense">Macht kein Sinn die gerade kopierten Daten einzufügen</string>
+    <string name="putData_okay">Gegner konnte keine Planeten befreien.</string>
+    <string name="putData_success">Planeten wurden vom Gegner befreit!</string>
+    <string name="putData_unknownCluster">Unbekannter Cluster!</string>
+    <string name="putData_wrongPlanetData">Falsche Planetendaten!</string>
+    <string name="queens">Queens</string>
+    <string name="quitGame">Spiel beenden</string>
+    <string name="reactorDestroyed">+Reaktor zerstört!</string>
+    <string name="receivedTrophy">+Planet befreit! Du hast eine Trophäe erhalten. (siehe Datenaustausch)</string>
+    <string name="save">Speichern</string>
+    <string name="saxony">Sachsen</string>
+    <string name="score">Score</string>
+    <string name="score1">XX Punkt</string>
+    <string name="score2">XX Punkte</string>
+    <string name="scoreOfMoves">Score von %1$s: %2$s, Moves: %3$s</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Suche"</string>
+    <string name="selectAsTarget">Auswählen</string>
+    <string name="selectTerritory">Territorium auswählen</string>
+    <string name="southernTerritory">Südhalbkugel</string>
+    <string name="startNewGame">Neues Spiel starten?</string>
+    <string name="startScreenTitle">Version 5.0 von SoltauFintel</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stoneWars">Stone Wars</string>
+    <string name="territoryLiberated">+Territorium befreit!</string>
+    <string name="theBronx">Bronx</string>
+    <string name="tooManyMoves">-Zu viele Spielzüge!</string>
+    <string name="trophies">Cluster %1$d: Bronze-Medaillen: %2$d, Silber-Pokale: %3$d, Gold-Trophäen: %4$d.\nPlatin-Trophäen: %5$d</string>
+    <string name="version">5.0</string>
+    <string name="winScore1">Gewonnen! Score: XX</string>
+    <string name="winScore2">Gewonnen! Score: XX</string>
+    <string name="yourScoreYourMoves">Deine Punkte: %1$s, deine Moves: %2$s</string>
+</resources>

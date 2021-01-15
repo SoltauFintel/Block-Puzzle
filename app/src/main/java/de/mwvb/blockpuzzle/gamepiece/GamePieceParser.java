@@ -88,15 +88,6 @@ public class GamePieceParser {
             for (int i = 2; i <= data.n; i++) {
                 data.allGamePieces.add(data.current.copy());
             }
-            for (int i = 0; i < data.r; i++) {
-                data.allGamePieces.add(data.current.copy().rotateToRight());
-            }
-            for (int i = 0; i < data.rr; i++) {
-                data.allGamePieces.add(data.current.copy().rotateToRight().rotateToRight());
-            }
-            for (int i = 0; i < data.l; i++) {
-                data.allGamePieces.add(data.current.copy().rotateToLeft());
-            }
         }
     }
 

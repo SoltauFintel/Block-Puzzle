@@ -355,7 +355,6 @@ public class Game {
                     }
                 }
             }
-            teil = teil.copy().rotateToRight();
         }
         return 1; // There's no space for the game piece in the playing field.
     }
@@ -370,13 +369,6 @@ public class Game {
 
     public int get(int x, int y) {
         return playingField.get(x, y);
-    }
-
-    public void rotate(int index) {
-        if (!gameOver) {
-            holders.get(index).rotate();
-            moveImpossible(index);
-        }
     }
 
     public void save() {

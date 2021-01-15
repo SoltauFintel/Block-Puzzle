@@ -90,7 +90,6 @@ class MainActivity : AppCompatActivity(), IGameView {
         getGamePieceView(index).setOnTouchListener(object : GamePieceTouchListener(index, resources) {
             override fun up(view: View?, event: MotionEvent?) {
                 getGamePieceView(index).endDragMode()
-                game.rotate(index)
             }
 
             override fun isDragAllowed(): Boolean {
