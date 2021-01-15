@@ -125,7 +125,7 @@ public class GamePiece {
         return -1;
     }
 
-    public int getPunkte() {
+    public int getScores() {
         int ret = 0;
         for (int x = 0; x < max; x++) {
             for (int y = 0; y < max; y++) {

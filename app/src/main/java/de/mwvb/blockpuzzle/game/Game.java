@@ -1,7 +1,5 @@
 package de.mwvb.blockpuzzle.game;
 
-import java.util.List;
-
 import de.mwvb.blockpuzzle.block.BlockTypes;
 import de.mwvb.blockpuzzle.gamepiece.GamePiece;
 import de.mwvb.blockpuzzle.gamepiece.Holders;
@@ -9,6 +7,7 @@ import de.mwvb.blockpuzzle.gamepiece.INextGamePiece;
 import de.mwvb.blockpuzzle.gamepiece.RandomGamePiece;
 import de.mwvb.blockpuzzle.persistence.GamePersistence;
 import de.mwvb.blockpuzzle.persistence.IPersistence;
+import de.mwvb.blockpuzzle.playingfield.FilledBlocks;
 import de.mwvb.blockpuzzle.playingfield.FilledRows;
 import de.mwvb.blockpuzzle.playingfield.PlayingField;
 import de.mwvb.blockpuzzle.playingfield.QPosition;
@@ -30,7 +29,7 @@ public class Game {
     // Zustand
     protected final PlayingField playingField = new PlayingField(blocks);
     protected final Holders holders = new Holders();
-    protected int punkte;
+    protected int score;
     protected int moves;
     protected boolean emptyScreenBonusActive = false;
     protected boolean gameOver = false; // wird nicht persistiert
@@ -65,8 +64,8 @@ public class Game {
         nextGamePiece = getNextGamePieceGenerator();
 
         // Gibt es einen Spielstand?
-        punkte = gape.loadScore();
-        if (punkte < 0) { // Nein
+        score = gape.loadScore();
+        if (score < 0) { // Nein
             newGame(); // Neues Spiel starten!
         } else {
             loadGame(true, true); // Spielstand laden
@@ -97,9 +96,9 @@ public class Game {
     protected void doNewGame() {
         gameOver = false;
         gape.get().saveGameOver(gameOver);
-        punkte = 0;
+        score = 0;
         gape.saveDelta(0);
-        view.showScore(punkte, 0, gameOver);
+        view.showScore(score, 0, gameOver);
         initNextGamePieceForNewGame();
 
         initPlayingField();
@@ -122,7 +121,7 @@ public class Game {
 
     protected void loadGame(boolean loadNextGamePiece, boolean checkGame) {
         gameOver = gape.loadGameOver();
-        view.showScore(punkte, gape.loadDelta(), gameOver);
+        view.showScore(score, gape.loadDelta(), gameOver);
         moves = gape.loadMoves();
         emptyScreenBonusActive = gape.get().loadEmptyScreenBonusActive();
         view.showMoves(moves);
@@ -186,40 +185,32 @@ public class Game {
     }
 
     /**
-     * Drop Aktion für Spielfeld
+     * Drop Action for gameField
      *
-     * @return true wenn Spielstein platziert wurde, false wenn dies nicht möglich ist
+     * @return true if gamePiece was placed, false if it's not possible
      */
-    private boolean place(int index, GamePiece teil, QPosition pos) { // old German name: platziere
-        final int punkteVorher = punkte;
-        boolean ret = playingField.match(teil, pos);
+    private boolean place(int index, GamePiece piece, QPosition pos) {
+        final int scoreBefore = score;
+        boolean ret = playingField.match(piece, pos);
         if (ret) {
-            playingField.place(teil, pos);
+            playingField.place(piece, pos);
             holders.get(index).setGamePiece(null);
 
-            // Gibt es gefüllte Rows?
-            FilledRows f = playingField.getFilledRows();
+            // Are there filled rows?
+            FilledRows fr = playingField.getFilledRows();
+            FilledBlocks fb = playingField.getFilledBlocks();
 
-            // Punktzahl erhöhen
-            punkte += teil.getPunkte() * getGamePieceBlocksScoreFactor() + f.getHits() * getHitsScoreFactor();
-            rowsAdditionalBonus(f.getXHits(), f.getYHits());
+            // increase score
+            score += piece.getScores() * getGamePieceBlocksScoreFactor() + fr.getHits() * getHitsScoreFactor();
+            rowsAdditionalBonus(fr.getXHits(), fr.getYHits());
 
             // auto-gravity
-            playingField.clearRows(f,null);
+            playingField.clearRowsAndBlocks(fr, fb);
             // Action wird erst wenige Millisekunden später fertig!
 
-            if (!emptyScreenBonusActive && playingField.getFilled() > (blocks * blocks * 0.40f)) { // More than 40% filled: fewGamePiecesOnThePlayingField bonus is active
-                emptyScreenBonusActive = true;
-                gape.get().saveEmptyScreenBonusActive(emptyScreenBonusActive);
-                view.playSound(1); // play sound "more than 40%"
-            }
-            if (f.getHits() > 0) {
-                fewGamePiecesOnThePlayingField();
-            }
-
-            int delta = punkte - punkteVorher;
+            int delta = score - scoreBefore;
             gape.saveDelta(delta);
-            view.showScore(punkte, delta, gameOver);
+            view.showScore(score, delta, gameOver);
             view.showMoves(++moves);
         }
         return ret;
@@ -241,23 +232,23 @@ public class Game {
             // Bonuspunkte wenn mehr als 2 Rows gleichzeitig abgeräumt werden.
             // Fällt mir etwas schwer zu entscheiden wieviel Punkte das jeweils wert ist.
             case 2:
-                punkte += 12;
+                score += 12;
                 break;
             case 3:
-                punkte += 17;
+                score += 17;
                 break;
             case 4:
-                punkte += 31;
+                score += 31;
                 break;
             case 5:
-                punkte += 44;
+                score += 44;
                 break;
             default:
-                punkte += 22;
+                score += 22;
                 break;
         }
         if (xrows > 0 && yrows > 0) {
-            punkte += 10;
+            score += 10;
         }
         // TODO Reihe mit gleicher Farbe (ohne oldOneColor) könnte weiteren Bonus auslösen.
     }
@@ -277,7 +268,7 @@ public class Game {
                 break;
         }
         if (bonus > 0) {
-            punkte += bonus;
+            score += bonus;
             emptyScreenBonusActive = false;
             gape.get().saveEmptyScreenBonusActive(emptyScreenBonusActive);
             view.playSound(2); // play sound "empty screen bonus"
@@ -302,7 +293,7 @@ public class Game {
         gameOver = true;
         updateHighScore();
         gape.saveDelta(0);
-        view.showScore(punkte, 0, gameOver); // display game over text
+        view.showScore(score, 0, gameOver); // display game over text
         playingField.gameOver(); // wenn parke die letzte Aktion war
     }
 
@@ -310,10 +301,10 @@ public class Game {
     private void updateHighScore() {
         IPersistence px = gape.get();
         int highscore = px.loadHighScore();
-        if (punkte > highscore || highscore <= 0) {
-            px.saveHighScore(punkte);
+        if (score > highscore || highscore <= 0) {
+            px.saveHighScore(score);
             px.saveHighScoreMoves(moves);
-        } else if (punkte == highscore) {
+        } else if (score == highscore) {
             int hMoves = px.loadHighScoreMoves();
             if (moves < hMoves || hMoves <= 0) {
                 px.saveHighScoreMoves(moves);
@@ -360,7 +351,7 @@ public class Game {
     }
 
     public boolean lessScore() {
-        return punkte < 10;
+        return score < 1;
     }
 
     public boolean isGameOver() {
@@ -372,7 +363,7 @@ public class Game {
     }
 
     public void save() {
-        gape.saveScore(punkte);
+        gape.saveScore(score);
         gape.saveMoves(moves);
         playingField.save();
         holders.save();

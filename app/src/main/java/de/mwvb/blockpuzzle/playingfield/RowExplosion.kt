@@ -4,9 +4,10 @@ import android.os.Handler
 
 class RowExplosion {
 
-    fun clearRows(filledRows: FilledRows, action: Action?, view: PlayingFieldView) {
+    fun clearRows(filledRows: FilledRows, filledBlocks: FilledBlocks, view: PlayingFieldView) {
         if (filledRows.hits > 0) {
             view.setFilledRows(filledRows)
+            view.setFilledBlocks(filledBlocks)
             @Suppress("DEPRECATION")
             val handler = Handler()
             handler.postDelayed({ view.drawmode(30, true, filledRows.hits >= 3) }, 50)
@@ -14,9 +15,8 @@ class RowExplosion {
             handler.postDelayed({ view.drawmode(32) }, 350)
             handler.postDelayed({ view.drawmode(0)
                 view.setFilledRows(null)
-                action?.execute()
+                view.setFilledBlocks(null)
             }, 500)
-            // See also time delay in DeathStarGame.deathStarDestroyed()
         }
     }
 }

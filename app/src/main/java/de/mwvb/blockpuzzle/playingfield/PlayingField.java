@@ -1,5 +1,7 @@
 package de.mwvb.blockpuzzle.playingfield;
 
+import android.util.Log;
+
 import de.mwvb.blockpuzzle.block.BlockTypes;
 import de.mwvb.blockpuzzle.gamepiece.GamePiece;
 import de.mwvb.blockpuzzle.persistence.GamePersistence;
@@ -9,7 +11,9 @@ public class PlayingField {
     private final int blocks;
 
     // Zustand
-    /** 1: x (nach rechts), 2: y (nach unten) */
+    /**
+     * 1: x (nach rechts), 2: y (nach unten)
+     */
     private int[][] matrix;
     private boolean gameOver = false;
 
@@ -76,7 +80,9 @@ public class PlayingField {
         return true;
     }
 
-    /** Male Teil ins Spielfeld! */
+    /**
+     * Male Teil ins Spielfeld!
+     */
     public void place(GamePiece teil, QPosition pos) { // old German method name: platziere
         for (int x = teil.getMinX(); x <= teil.getMaxX(); x++) {
             for (int y = teil.getMinY(); y <= teil.getMaxY(); y++) {
@@ -90,19 +96,169 @@ public class PlayingField {
         view.draw();
     }
 
+    public FilledBlocks getFilledBlocks() {
+        FilledBlocks blocks = new FilledBlocks();
+        if (checkBlockOne()) {
+            blocks.getFilledBlocks().add(1);
+        }
+        if (checkBlockTwo()) {
+            blocks.getFilledBlocks().add(2);
+        }
+        if (checkBlockThree()) {
+            blocks.getFilledBlocks().add(3);
+        }
+        if (checkBlockFour()) {
+            blocks.getFilledBlocks().add(4);
+        }
+        if (checkBlockFive()) {
+            blocks.getFilledBlocks().add(5);
+        }
+        if (checkBlockSix()) {
+            blocks.getFilledBlocks().add(6);
+        }
+        if (checkBlockSeven()) {
+            blocks.getFilledBlocks().add(7);
+        }
+        if (checkBlockEight()) {
+            blocks.getFilledBlocks().add(8);
+        }
+        if (checkBlockNine()) {
+            blocks.getFilledBlocks().add(9);
+        }
+        return blocks;
+    }
+
+    private boolean checkBlockOne() {
+        boolean result = true;
+        for (int x = 0; x < 3; x++) {
+            for (int y = 0; y < 3; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 1 = " + result);
+        return result;
+    }
+
+    private boolean checkBlockTwo() {
+        boolean result = true;
+        for (int x = 3; x < 6; x++) {
+            for (int y = 0; y < 3; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 2 = " + result);
+        return result;
+    }
+
+    private boolean checkBlockThree() {
+        boolean result = true;
+        for (int x = 6; x < 9; x++) {
+            for (int y = 0; y < 3; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 3 = " + result);
+        return result;
+    }
+
+    private boolean checkBlockFour() {
+        boolean result = true;
+        for (int x = 0; x < 3; x++) {
+            for (int y = 3; y < 6; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 4 = " + result);
+        return result;
+    }
+
+    private boolean checkBlockFive() {
+        boolean result = true;
+        for (int x = 3; x < 6; x++) {
+            for (int y = 3; y < 6; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 5 = " + result);
+        return result;
+    }
+
+    private boolean checkBlockSix() {
+        boolean result = true;
+        for (int x = 6; x < 9; x++) {
+            for (int y = 3; y < 6; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 6 = " + result);
+        return result;
+    }
+
+    private boolean checkBlockSeven() {
+        boolean result = true;
+        for (int x = 0; x < 3; x++) {
+            for (int y = 6; y < 9; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 7 = " + result);
+        return result;
+    }
+
+    private boolean checkBlockEight() {
+        boolean result = true;
+        for (int x = 3; x < 6; x++) {
+            for (int y = 6; y < 9; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 8 = " + result);
+        return result;
+    }
+
+    private boolean checkBlockNine() {
+        boolean result = true;
+        for (int x = 6; x < 9; x++) {
+            for (int y = 6; y < 9; y++) {
+                if (get(x, y) == 0) {
+                    result = false;
+                }
+            }
+        }
+        Log.d("blocksCheck", "result block 9 = " + result);
+        return result;
+    }
+
+
     public FilledRows getFilledRows() {
-        FilledRows ret = new FilledRows();
+        FilledRows temp = new FilledRows();
         for (int y = 0; y < blocks; y++) {
             if (x_filled(y)) {
-                ret.getYlist().add(y);
+                temp.getYlist().add(y);
             }
         }
         for (int x = 0; x < blocks; x++) {
             if (y_filled(x)) {
-                ret.getXlist().add(x);
+                temp.getXlist().add(x);
             }
         }
-        return ret;
+        return temp;
     }
 
     private boolean x_filled(int y) {
@@ -123,22 +279,85 @@ public class PlayingField {
         return true;
     }
 
-    public void clearRows(FilledRows f, Action action) {
-        for (int x : f.getXlist()) {
+    public void clearRowsAndBlocks(FilledRows fr, FilledBlocks fb) {
+        for (int x : fr.getXlist()) {
             for (int y = 0; y < blocks; y++) {
-                if (!f.getExclusions().contains(new QPosition(x, y))) {
-                    set(x, y, 0);
-                }
+                set(x, y, 0);
             }
         }
-        for (int y : f.getYlist()) {
+        for (int y : fr.getYlist()) {
             for (int x = 0; x < blocks; x++) {
-                if (!f.getExclusions().contains(new QPosition(x, y))) {
-                    set(x, y, 0);
-                }
+                set(x, y, 0);
             }
         }
-        view.clearRows(f, action);
+        for (int block : fb.getFilledBlocks()) {
+            switch (block) {
+                case 1:
+                    for (int x = 0; x < 3; x++) {
+                        for (int y = 0; y < 3; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+                case 2:
+                    for (int x = 3; x < 6; x++) {
+                        for (int y = 0; y < 3; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+                case 3:
+                    for (int x = 6; x < 9; x++) {
+                        for (int y = 0; y < 3; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+                case 4:
+                    for (int x = 0; x < 3; x++) {
+                        for (int y = 3; y < 6; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+                case 5:
+                    for (int x = 3; x < 6; x++) {
+                        for (int y = 3; y < 6; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+                case 6:
+                    for (int x = 6; x < 9; x++) {
+                        for (int y = 3; y < 6; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+                case 7:
+                    for (int x = 0; x < 3; x++) {
+                        for (int y = 6; y < 9; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+                case 8:
+                    for (int x = 3; x < 6; x++) {
+                        for (int y = 6; y < 9; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+                case 9:
+                    for (int x = 6; x < 9; x++) {
+                        for (int y = 6; y < 9; y++) {
+                            set(x, y, 0);
+                        }
+                    }
+                    break;
+            }
+        }
+        view.clearRowsAndBlocks(fr, fb);
     }
 
     public int getFilled() {

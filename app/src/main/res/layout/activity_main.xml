@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#3D2400"
-    tools:context="de.mwvb.blockpuzzle.MainActivity">
+    tools:context="de.mwvb.blockpuzzle.MainActivity"
+    android:padding="10dp">
 
 
     <LinearLayout
@@ -68,7 +69,7 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="horizontal"
@@ -76,26 +77,30 @@
 
             <RelativeLayout
                 android:id="@+id/placeholder1"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="85dp"
                 android:layout_marginStart="10dp" />
 
             <RelativeLayout
                 android:id="@+id/placeholder2"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="85dp"
                 android:layout_marginStart="10dp" />
 
             <RelativeLayout
                 android:id="@+id/placeholder3"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="85dp"
                 android:layout_marginStart="10dp" />
 
             <RelativeLayout
                 android:id="@+id/parking"
-                android:layout_width="75dp"
-                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="85dp"
                 android:layout_marginStart="10dp"
                 android:background="@color/colorParking" />
         </LinearLayout>

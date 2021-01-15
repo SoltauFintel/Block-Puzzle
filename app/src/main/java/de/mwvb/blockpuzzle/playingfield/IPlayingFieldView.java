@@ -10,7 +10,7 @@ public interface IPlayingFieldView {
 
     void draw();
 
-    void clearRows(FilledRows filledRows, Action action);
+    void clearRowsAndBlocks(FilledRows filledRows, FilledBlocks filledBlocks);
 
     void oneColor();
 }

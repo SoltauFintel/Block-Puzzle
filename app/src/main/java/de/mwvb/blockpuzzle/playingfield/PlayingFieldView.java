@@ -24,24 +24,21 @@ import de.mwvb.blockpuzzle.game.Game;
 import de.mwvb.blockpuzzle.sound.SoundService;
 
 /**
- * Das Spielfeld ist ein 10x10 großes Quadrat.
- * Im Spielfeld werden die Spielsteine abgelegt.
- * Ein Kästchen hat die Belegung 0=leer, 1=Block. Angedacht sind weitere Belegungen für Boni.
- * Werte ab 30 haben eine Sonderrolle für die Darstellung.
+ * playingField is 9*9 rectangle
+ * You can drag gamePieces onto playingField.
+ * each block on the playingField has a value: 0 = empty, 1 = occupied.
  *
- * Das Spielfeld ist 300dp groß. Nach unten ist es 2 Reihen (60dp) größer, damit Drag&Drop
- * funktioniert.
+ * PlayingField's size is 300*300dp. At the bottom it's 2 rows bigger (60dp) in order that
+ * Drag'n'Drop works correctly
  */
 public class PlayingFieldView extends View implements IPlayingFieldView {
     public static final int w = 300; // dp
-    private final Paint rectborder = new Paint();
-    private final Paint rectline = new Paint();
-    private final Paint mark = new Paint();
     Bitmap field;
     Rect rectDst;
     Paint paint;
     private final SoundService soundService = new SoundService();
     private FilledRows filledRows;
+    private FilledBlocks filledBlocks;
     private int mode = 0;
     private final IBlockDrawer empty = new EmptyBlockDrawer(this);
     private IBlockDrawer grey;
@@ -62,17 +59,6 @@ public class PlayingFieldView extends View implements IPlayingFieldView {
         init(context);
     }
 
-//    public PlayingFieldView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-//        super(context, attrs, defStyleAttr);
-//        init(context);
-//    }
-
-    /* ??? - API level problem
-    public SpielfeldView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        init(context);
-    }*/
-
     private void init(Context context) {
         soundService.init(context);
 
@@ -83,21 +69,10 @@ public class PlayingFieldView extends View implements IPlayingFieldView {
         rectDst = new Rect(0, 0, px, px);
         paint = new Paint();
 
-//        rectborder.setStrokeWidth(3);
-//        rectborder.setColor(Color.parseColor("#a65726"));
-//        rectborder.setStyle(Paint.Style.STROKE);
-//
-//        rectline.setStrokeWidth(1);
-//        rectline.setColor(rectborder.getColor());
-
         grey = ColorBlockDrawer.byRColor(this, R.color.colorGrey, R.color.colorGrey_i, R.color.colorGrey_ib);
         bd30 = new ColorBlockDrawer(this, getResources().getColor(R.color.explosion30));
         bd31 = new ColorBlockDrawer(this, getResources().getColor(R.color.explosion31));
         bd32 = new ColorBlockDrawer(this, getResources().getColor(R.color.explosion32));
-
-//        mark.setColor(Color.GRAY);
-//        mark.setStrokeWidth(3);
-//        mark.setStyle(Paint.Style.STROKE);
     }
 
     @Override
@@ -140,20 +115,33 @@ public class PlayingFieldView extends View implements IPlayingFieldView {
 
     private BlockDrawerStrategy getMatrixGet() {
         if (playingField.isGameOver()) {
-            return (x, y) -> playingField.get(x, y) > 0 ? grey : empty;
+            return new BlockDrawerStrategy() {
+                @Override
+                public IBlockDrawer get(int x, int y) {
+                    if (playingField.get(x, y) > 0) return grey;
+                    return empty;
+                }
+            };
         }
         final BlockDrawerStrategy std = getStdMatrixGet();
-        if (filledRows != null) { // row ausblenden Modus
-            return (x, y) -> {
-                if (!filledRows.getExclusions().contains(new QPosition(x, y)) && (filledRows.containsX(x) || filledRows.containsY(y))) {
-                    switch (mode) {
-                        case 30: return bd30;
-                        case 31: return bd31;
-                        case 32: return bd32;
-                        default: return empty;
-                    }
-                } else {
-                    return std.get(x, y);
+        if (filledRows != null || filledBlocks != null) { // row clearing mode
+            return new BlockDrawerStrategy() {
+                @Override
+                public IBlockDrawer get(int x, int y) {
+                        if (filledRows.containsX(x) || filledRows.containsY(y)|| !filledBlocks.getFilledBlocks().isEmpty()) {
+                            switch (mode) {
+                                case 30:
+                                    return bd30;
+                                case 31:
+                                    return bd31;
+                                case 32:
+                                    return bd32;
+                                default:
+                                    return empty;
+                            }
+                        } else {
+                            return std.get(x, y);
+                        }
                 }
             };
         } else {
@@ -162,20 +150,27 @@ public class PlayingFieldView extends View implements IPlayingFieldView {
     }
 
     private BlockDrawerStrategy getStdMatrixGet() {
-        return (x, y) -> {
-            int b = playingField.get(x, y);
-            return b >= 1 ? blockTypes.getBlockDrawer(b) : empty;
+        return new BlockDrawerStrategy() {
+            @Override
+            public IBlockDrawer get(int x, int y) {
+                int b = playingField.get(x, y);
+                if (b >= 1) return blockTypes.getBlockDrawer(b);
+                return empty;
+            }
         };
     }
 
     @Override
-    public void clearRows(final FilledRows filledRows, final Action action) {
-        new RowExplosion().clearRows(filledRows, action, this);
+    public void clearRowsAndBlocks(final FilledRows filledRows, final FilledBlocks filledBlocks) {
+        new RowExplosion().clearRows(filledRows, filledBlocks, this);
     }
 
     // called by RowExplosion
-    void setFilledRows(FilledRows f) {
-        this.filledRows = f;
+    void setFilledRows(FilledRows fr) {
+        this.filledRows = fr;
+    }
+    void setFilledBlocks (FilledBlocks fb) {
+        this.filledBlocks = fb;
     }
 
     // called by RowExplosion

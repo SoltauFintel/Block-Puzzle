@@ -28,10 +28,10 @@ de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0036.java
  de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0036
 de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0028.java
  de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0028
-de/mwvb/blockpuzzle/playingfield/Action.java
- de.mwvb.blockpuzzle.playingfield.Action
 de/mwvb/blockpuzzle/persistence/Persistence.java
  de.mwvb.blockpuzzle.persistence.Persistence
+de/mwvb/blockpuzzle/playingfield/Action.java
+ de.mwvb.blockpuzzle.playingfield.Action
 de/mwvb/blockpuzzle/block/EmptyBlockDrawer.java
  de.mwvb.blockpuzzle.block.EmptyBlockDrawer
 de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0040.java
@@ -66,6 +66,9 @@ de/mwvb/blockpuzzle/block/IBlockDrawer.java
  de.mwvb.blockpuzzle.block.IBlockDrawer
 de/mwvb/blockpuzzle/playingfield/PlayingFieldView.java
  de.mwvb.blockpuzzle.playingfield.PlayingFieldView
+ de.mwvb.blockpuzzle.playingfield.PlayingFieldView$1
+ de.mwvb.blockpuzzle.playingfield.PlayingFieldView$2
+ de.mwvb.blockpuzzle.playingfield.PlayingFieldView$3
 de/mwvb/blockpuzzle/BuildConfig.java
  de.mwvb.blockpuzzle.BuildConfig
 de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0024.java
@@ -89,6 +92,8 @@ de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0039.java
  de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0039
 de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0033.java
  de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0033
+de/mwvb/blockpuzzle/playingfield/FilledBlocks.java
+ de.mwvb.blockpuzzle.playingfield.FilledBlocks
 de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0009.java
  de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0009
 de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0025.java
