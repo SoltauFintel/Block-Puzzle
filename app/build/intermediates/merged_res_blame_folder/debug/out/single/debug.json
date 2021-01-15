@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sam2.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\drawable-v24\\sam2.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_crunch.wav.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\crunch.wav"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_alarm.mp3.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\alarm.mp3"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable_redcursor.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\drawable\\redcursor.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_start_screen.xml.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\layout\\activity_start_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_field.jpg.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\drawable-v24\\field.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_explosion.wav.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\explosion.wav"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_emptysb.mp3.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\emptysb.mp3"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_jeqa.wav.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\jeqa.wav"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_brickdrop2.wav.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\brickdrop2.wav"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_more40.mp3.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\more40.mp3"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_laughter.wav.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\laughter.wav"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_money.wav.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\money.wav"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\raw_applause.mp3.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\raw\\applause.mp3"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable_speechbubble_top.xml.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\drawable\\speechbubble_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    }
+]

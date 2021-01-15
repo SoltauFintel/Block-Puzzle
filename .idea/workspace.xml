@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2f2754b-cc87-4a43-a670-bc8fa7836c45" name="Default Changelist" comment="first commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mxirmhqOs8JbTsqYtRJ8UAYFLr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_6P_5.7inch_API_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-12T11:11:27.598Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android-custom-viewC:/Users/ChamP/AndroidStudioProjects/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/background/StarsView.java_SELECTED" value="StarsView" />
+    <property name="android-custom-viewC:/Users/ChamP/AndroidStudioProjects/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/cluster/ClusterView.java_SELECTED" value="ClusterView" />
+    <property name="android-custom-viewC:/Users/ChamP/AndroidStudioProjects/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/playingfield/PlayingFieldView.java_SELECTED" value="PlayingFieldView" />
+    <property name="android-custom-viewC:/Users/ChamP/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
+    <property name="android-custom-viewC:/Users/ChamP/AppData/Local/Android/Sdk/sources/android-30/android/view/ViewGroup.java_SELECTED" value="ViewGroup" />
+    <property name="android-custom-viewC:/Users/ChamP/Desktop/BlockuDocku/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/playingfield/PlayingFieldView.java_SELECTED" value="PlayingFieldView" />
+    <property name="android-custom-viewC:/Users/ChamP/Desktop/TEST/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/background/StarsView.java_SELECTED" value="StarsView" />
+    <property name="android-custom-viewC:/Users/ChamP/Desktop/TEST/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/playingfield/PlayingFieldView.java_SELECTED" value="PlayingFieldView" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="multi-representation-previewC:/Users/ChamP/AndroidStudioProjects/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/background/StarsView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/ChamP/AndroidStudioProjects/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/cluster/ClusterView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/ChamP/AndroidStudioProjects/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/playingfield/PlayingFieldView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/ChamP/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/ChamP/AppData/Local/Android/Sdk/sources/android-30/android/view/ViewGroup.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/ChamP/Desktop/BlockuDocku/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/playingfield/PlayingFieldView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/ChamP/Desktop/TEST/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/background/StarsView.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/ChamP/Desktop/TEST/blockpuzzle/app/src/main/java/de/mwvb/blockpuzzle/playingfield/PlayingFieldView.java_selected" value="Custom views" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.mwvb.blockpuzzle.background" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\res\drawable-v24" />
+      <recent name="C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\java\de\mwvb\blockpuzzle\block" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Block_Puzzle.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ChamP\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2f2754b-cc87-4a43-a670-bc8fa7836c45" name="Default Changelist" comment="" />
+      <created>1610441843718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610441843718</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1610703081270</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610703081270</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1562" y="203" key="#PSD" timestamp="1610450437213">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1562" y="203" key="#PSD/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610450437213" />
+    <state x="-1212" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1610635528173">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1212" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610635528173" />
+    <state x="-1296" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610640469995">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1296" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610640469995" />
+    <state x="559" y="87" key="FileChooserDialogImpl" timestamp="1610704189983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1003" y="176" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610702931919" />
+    <state x="559" y="87" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1610704189983" />
+    <state width="1863" height="84" key="GridCell.Tab.0.bottom" timestamp="1610640306218">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="84" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610640306218" />
+    <state width="1480" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610479649926" />
+    <state width="1863" height="84" key="GridCell.Tab.0.center" timestamp="1610640306218">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="84" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610640306218" />
+    <state width="1480" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610479649926" />
+    <state width="1863" height="84" key="GridCell.Tab.0.left" timestamp="1610640306218">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="84" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610640306218" />
+    <state width="1480" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610479649925" />
+    <state width="1863" height="84" key="GridCell.Tab.0.right" timestamp="1610640306218">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1863" height="84" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610640306218" />
+    <state width="1480" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610479649926" />
+    <state x="153" y="0" key="SettingsEditor" timestamp="1610704700250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="153" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1610704700250" />
+    <state x="297" y="72" key="Vcs.Push.Dialog.v2" timestamp="1610704338665">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1468" y="187" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610703392187" />
+    <state x="297" y="72" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1610704338665" />
+    <state x="-1187" y="282" key="chooseDestDirectoryDialog" timestamp="1610640474730">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1187" y="282" key="chooseDestDirectoryDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610640474730" />
+    <state x="-1388" y="236" width="840" height="1034" key="run.anything.popup" timestamp="1610534224655">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1388" y="236" width="840" height="1034" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610534224655" />
+    <state x="-1381" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1610617671453">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1381" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610617671453" />
+  </component>
+</project>
