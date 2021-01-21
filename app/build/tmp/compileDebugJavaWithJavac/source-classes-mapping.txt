@@ -1,150 +1,65 @@
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0005.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0005
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0019.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0019
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0030.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0030
-de/mwvb/blockpuzzle/gamepiece/IGamePieceView.java
- de.mwvb.blockpuzzle.gamepiece.IGamePieceView
-de/mwvb/blockpuzzle/block/BlockDrawParameters.java
- de.mwvb.blockpuzzle.block.BlockDrawParameters
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0027.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0027
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0013.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0013
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0021.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0021
-de/mwvb/blockpuzzle/App.java
- de.mwvb.blockpuzzle.App
-de/mwvb/blockpuzzle/gamepiece/IGamePieceSet.java
- de.mwvb.blockpuzzle.gamepiece.IGamePieceSet
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0022.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0022
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0006.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0006
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0014.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0014
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0036.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0036
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0028.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0028
-de/mwvb/blockpuzzle/persistence/Persistence.java
- de.mwvb.blockpuzzle.persistence.Persistence
-de/mwvb/blockpuzzle/playingfield/Action.java
- de.mwvb.blockpuzzle.playingfield.Action
-de/mwvb/blockpuzzle/block/EmptyBlockDrawer.java
- de.mwvb.blockpuzzle.block.EmptyBlockDrawer
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0040.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0040
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0003.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0003
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0032.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0032
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0035.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0035
-de/mwvb/blockpuzzle/block/ColorBlockDrawer.java
- de.mwvb.blockpuzzle.block.ColorBlockDrawer
-de/mwvb/blockpuzzle/gamepiece/RandomGamePiece.java
- de.mwvb.blockpuzzle.gamepiece.RandomGamePiece
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0038.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0038
-de/mwvb/blockpuzzle/gamepiece/GamePieceHolder.java
- de.mwvb.blockpuzzle.gamepiece.GamePieceHolder
-de/mwvb/blockpuzzle/sound/SoundService.java
- de.mwvb.blockpuzzle.sound.SoundService
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0002.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0002
 de/mwvb/blockpuzzle/persistence/GamePersistence.java
  de.mwvb.blockpuzzle.persistence.GamePersistence
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0041.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0041
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0010.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0010
-de/mwvb/blockpuzzle/gamepiece/sets/AllGamePieceSets.java
- de.mwvb.blockpuzzle.gamepiece.sets.AllGamePieceSets
+de/mwvb/blockpuzzle/gamepiece/IGamePieceView.java
+ de.mwvb.blockpuzzle.gamepiece.IGamePieceView
+de/mwvb/blockpuzzle/playingfield/FilledSectors.java
+ de.mwvb.blockpuzzle.playingfield.FilledSectors
+de/mwvb/blockpuzzle/block/BlockDrawParameters.java
+ de.mwvb.blockpuzzle.block.BlockDrawParameters
 de/mwvb/blockpuzzle/block/IBlockDrawer.java
  de.mwvb.blockpuzzle.block.IBlockDrawer
 de/mwvb/blockpuzzle/playingfield/PlayingFieldView.java
  de.mwvb.blockpuzzle.playingfield.PlayingFieldView
  de.mwvb.blockpuzzle.playingfield.PlayingFieldView$1
  de.mwvb.blockpuzzle.playingfield.PlayingFieldView$2
- de.mwvb.blockpuzzle.playingfield.PlayingFieldView$3
 de/mwvb/blockpuzzle/BuildConfig.java
  de.mwvb.blockpuzzle.BuildConfig
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0024.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0024
 de/mwvb/blockpuzzle/playingfield/FilledRows.java
  de.mwvb.blockpuzzle.playingfield.FilledRows
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0008.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0008
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0016.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0016
+de/mwvb/blockpuzzle/App.java
+ de.mwvb.blockpuzzle.App
 de/mwvb/blockpuzzle/persistence/IPersistence.java
  de.mwvb.blockpuzzle.persistence.IPersistence
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0017.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0017
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0011.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0011
+de/mwvb/blockpuzzle/gamepiece/IGamePieceSet.java
+ de.mwvb.blockpuzzle.gamepiece.IGamePieceSet
 de/mwvb/blockpuzzle/gamepiece/GamePieceParser.java
  de.mwvb.blockpuzzle.gamepiece.GamePieceParser
  de.mwvb.blockpuzzle.gamepiece.GamePieceParser$GPParseData
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0039.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0039
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0033.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0033
-de/mwvb/blockpuzzle/playingfield/FilledBlocks.java
- de.mwvb.blockpuzzle.playingfield.FilledBlocks
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0009.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0009
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0025.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0025
 de/mwvb/blockpuzzle/gamepiece/INextGamePiece.java
  de.mwvb.blockpuzzle.gamepiece.INextGamePiece
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0023.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0023
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0034.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0034
+de/mwvb/blockpuzzle/persistence/Persistence.java
+ de.mwvb.blockpuzzle.persistence.Persistence
+de/mwvb/blockpuzzle/playingfield/Action.java
+ de.mwvb.blockpuzzle.playingfield.Action
 de/mwvb/blockpuzzle/playingfield/PlayingField.java
  de.mwvb.blockpuzzle.playingfield.PlayingField
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0026.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0026
 de/mwvb/blockpuzzle/block/BlockDrawerStrategy.java
  de.mwvb.blockpuzzle.block.BlockDrawerStrategy
 de/mwvb/blockpuzzle/game/DoesNotWorkException.java
  de.mwvb.blockpuzzle.game.DoesNotWorkException
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0018.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0018
+de/mwvb/blockpuzzle/block/EmptyBlockDrawer.java
+ de.mwvb.blockpuzzle.block.EmptyBlockDrawer
 de/mwvb/blockpuzzle/playingfield/IPlayingFieldView.java
  de.mwvb.blockpuzzle.playingfield.IPlayingFieldView
 de/mwvb/blockpuzzle/gamepiece/GamePieceView.java
  de.mwvb.blockpuzzle.gamepiece.GamePieceView
 de/mwvb/blockpuzzle/gamepiece/GamePieceTouchListener.java
  de.mwvb.blockpuzzle.gamepiece.GamePieceTouchListener
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0029.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0029
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0037.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0037
 de/mwvb/blockpuzzle/block/BlockTypes.java
  de.mwvb.blockpuzzle.block.BlockTypes
 de/mwvb/blockpuzzle/gamepiece/GamePiece.java
  de.mwvb.blockpuzzle.gamepiece.GamePiece
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0007.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0007
+de/mwvb/blockpuzzle/block/ColorBlockDrawer.java
+ de.mwvb.blockpuzzle.block.ColorBlockDrawer
+de/mwvb/blockpuzzle/gamepiece/RandomGamePiece.java
+ de.mwvb.blockpuzzle.gamepiece.RandomGamePiece
 de/mwvb/blockpuzzle/sound/ISoundService.java
  de.mwvb.blockpuzzle.sound.ISoundService
+de/mwvb/blockpuzzle/gamepiece/GamePieceHolder.java
+ de.mwvb.blockpuzzle.gamepiece.GamePieceHolder
 de/mwvb/blockpuzzle/gamepiece/AbstractBPTouchListener.java
  de.mwvb.blockpuzzle.gamepiece.AbstractBPTouchListener
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0001.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0001
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0031.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0031
 de/mwvb/blockpuzzle/game/Game.java
  de.mwvb.blockpuzzle.game.Game
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0015.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0015
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0004.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0004
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0012.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0012
-de/mwvb/blockpuzzle/gamepiece/sets/GamePieceSet0020.java
- de.mwvb.blockpuzzle.gamepiece.sets.GamePieceSet0020
+de/mwvb/blockpuzzle/sound/SoundService.java
+ de.mwvb.blockpuzzle.sound.SoundService

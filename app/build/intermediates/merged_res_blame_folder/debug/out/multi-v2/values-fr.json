@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
+            "outputFile": "D:\\DOCs\\Me\\ANDROID\\FSD\\TEST\\blockpuzzle\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ChamP\\.gradle\\caches\\transforms-2\\files-2.1\\147a6e7f9f7fc8aa5d9c7d6dea93c4ed\\appcompat-1.2.0\\res\\values-fr\\values-fr.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ChamP\\Desktop\\TEST\\blockpuzzle\\app\\src\\main\\res\\values-fr\\strings.xml",
+                    "source": "D:\\DOCs\\Me\\ANDROID\\FSD\\TEST\\blockpuzzle\\app\\src\\main\\res\\values-fr\\strings.xml",
                     "from": {
                         "startLines": "70,2,97,57,71,86,20,31,52,69,55,76,77,78,79,80,81,82,27,54,92,95,88,89,90,93,50,73,26,24,10,11,72,6,36,98,99,41,53,17,22,37,38,30,58,91,35,14,15,59,21,5,47,43,75,32,68,19,40,56,34,49,44,39,23,42,64,61,62,60,66,67,63,65,87,51,96,84,16,29,94,8,9,46,25,28,33,7,3,18,48,85,74,83,4,12,13,45",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

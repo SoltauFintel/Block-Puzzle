@@ -1,18 +1,16 @@
 package de.mwvb.blockpuzzle.playingfield;
 
-import android.util.Log;
-
-import de.mwvb.blockpuzzle.block.BlockTypes;
 import de.mwvb.blockpuzzle.gamepiece.GamePiece;
 import de.mwvb.blockpuzzle.persistence.GamePersistence;
+import timber.log.Timber;
 
 public class PlayingField {
-    // Stammdaten
-    private final int blocks;
 
-    // Zustand
+    private final int blocks;
+    private int filledBlocks;
+
     /**
-     * 1: x (nach rechts), 2: y (nach unten)
+     * 1: x (to the right), 2: y (down)
      */
     private int[][] matrix;
     private boolean gameOver = false;
@@ -61,12 +59,12 @@ public class PlayingField {
         view.draw();
     }
 
-    public boolean match(GamePiece teil, QPosition pos) {
-        for (int x = teil.getMinX(); x <= teil.getMaxX(); x++) {
-            for (int y = teil.getMinY(); y <= teil.getMaxY(); y++) {
-                if (teil.filled(x, y)) {
-                    int ax = pos.getX() + x - teil.getMinX();
-                    int ay = pos.getY() + y - teil.getMinY();
+    public boolean match(GamePiece gamePiece, QPosition pos) {
+        for (int x = gamePiece.getMinX(); x <= gamePiece.getMaxX(); x++) {
+            for (int y = gamePiece.getMinY(); y <= gamePiece.getMaxY(); y++) {
+                if (gamePiece.filled(x, y)) {
+                    int ax = pos.getX() + x - gamePiece.getMinX();
+                    int ay = pos.getY() + y - gamePiece.getMinY();
                     if (ax < 0 || ax >= blocks || ay < 0 || ay >= blocks) {
                         return false;
                     }
@@ -81,54 +79,54 @@ public class PlayingField {
     }
 
     /**
-     * Male Teil ins Spielfeld!
+     * draw gamePiece on the playingField
      */
-    public void place(GamePiece teil, QPosition pos) { // old German method name: platziere
-        for (int x = teil.getMinX(); x <= teil.getMaxX(); x++) {
-            for (int y = teil.getMinY(); y <= teil.getMaxY(); y++) {
-                if (teil.filled(x, y)) {
-                    int ax = pos.getX() + x - teil.getMinX();
-                    int ay = pos.getY() + y - teil.getMinY();
-                    set(ax, ay, teil.getBlockType(x, y));
+    public void place(GamePiece gamePiece, QPosition pos) { // old German method name: platziere
+        for (int x = gamePiece.getMinX(); x <= gamePiece.getMaxX(); x++) {
+            for (int y = gamePiece.getMinY(); y <= gamePiece.getMaxY(); y++) {
+                if (gamePiece.filled(x, y)) {
+                    int ax = pos.getX() + x - gamePiece.getMinX();
+                    int ay = pos.getY() + y - gamePiece.getMinY();
+                    set(ax, ay, gamePiece.getBlockType(x, y));
                 }
             }
         }
         view.draw();
     }
 
-    public FilledBlocks getFilledBlocks() {
-        FilledBlocks blocks = new FilledBlocks();
-        if (checkBlockOne()) {
-            blocks.getFilledBlocks().add(1);
+    public FilledSectors getFilledSectors() {
+        FilledSectors sectors = new FilledSectors();
+        if (checkSectorOne()) {
+            sectors.getFilledSectors().add(1);
         }
-        if (checkBlockTwo()) {
-            blocks.getFilledBlocks().add(2);
+        if (checkSectorTwo()) {
+            sectors.getFilledSectors().add(2);
         }
-        if (checkBlockThree()) {
-            blocks.getFilledBlocks().add(3);
+        if (checkSectorThree()) {
+            sectors.getFilledSectors().add(3);
         }
-        if (checkBlockFour()) {
-            blocks.getFilledBlocks().add(4);
+        if (checkSectorFour()) {
+            sectors.getFilledSectors().add(4);
         }
-        if (checkBlockFive()) {
-            blocks.getFilledBlocks().add(5);
+        if (checkSectorFive()) {
+            sectors.getFilledSectors().add(5);
         }
-        if (checkBlockSix()) {
-            blocks.getFilledBlocks().add(6);
+        if (checkSectorSix()) {
+            sectors.getFilledSectors().add(6);
         }
-        if (checkBlockSeven()) {
-            blocks.getFilledBlocks().add(7);
+        if (checkSectorSeven()) {
+            sectors.getFilledSectors().add(7);
         }
-        if (checkBlockEight()) {
-            blocks.getFilledBlocks().add(8);
+        if (checkSectorEight()) {
+            sectors.getFilledSectors().add(8);
         }
-        if (checkBlockNine()) {
-            blocks.getFilledBlocks().add(9);
+        if (checkSectorNine()) {
+            sectors.getFilledSectors().add(9);
         }
-        return blocks;
+        return sectors;
     }
 
-    private boolean checkBlockOne() {
+    private boolean checkSectorOne() {
         boolean result = true;
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 3; y++) {
@@ -137,11 +135,11 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 1 = " + result);
+        Timber.d("result Sector 1 = %s", result);
         return result;
     }
 
-    private boolean checkBlockTwo() {
+    private boolean checkSectorTwo() {
         boolean result = true;
         for (int x = 3; x < 6; x++) {
             for (int y = 0; y < 3; y++) {
@@ -150,11 +148,11 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 2 = " + result);
+        Timber.d("result Sector 2 = %s", result);
         return result;
     }
 
-    private boolean checkBlockThree() {
+    private boolean checkSectorThree() {
         boolean result = true;
         for (int x = 6; x < 9; x++) {
             for (int y = 0; y < 3; y++) {
@@ -163,11 +161,11 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 3 = " + result);
+        Timber.d("result Sector 3 = %s", result);
         return result;
     }
 
-    private boolean checkBlockFour() {
+    private boolean checkSectorFour() {
         boolean result = true;
         for (int x = 0; x < 3; x++) {
             for (int y = 3; y < 6; y++) {
@@ -176,11 +174,11 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 4 = " + result);
+        Timber.d("result Sector 4 = %s", result);
         return result;
     }
 
-    private boolean checkBlockFive() {
+    private boolean checkSectorFive() {
         boolean result = true;
         for (int x = 3; x < 6; x++) {
             for (int y = 3; y < 6; y++) {
@@ -189,11 +187,11 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 5 = " + result);
+        Timber.d("result Sector 5 = %s", result);
         return result;
     }
 
-    private boolean checkBlockSix() {
+    private boolean checkSectorSix() {
         boolean result = true;
         for (int x = 6; x < 9; x++) {
             for (int y = 3; y < 6; y++) {
@@ -202,11 +200,11 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 6 = " + result);
+        Timber.d("result Sector 6 = %s", result);
         return result;
     }
 
-    private boolean checkBlockSeven() {
+    private boolean checkSectorSeven() {
         boolean result = true;
         for (int x = 0; x < 3; x++) {
             for (int y = 6; y < 9; y++) {
@@ -215,11 +213,11 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 7 = " + result);
+        Timber.d("result Sector 7 = %s", result);
         return result;
     }
 
-    private boolean checkBlockEight() {
+    private boolean checkSectorEight() {
         boolean result = true;
         for (int x = 3; x < 6; x++) {
             for (int y = 6; y < 9; y++) {
@@ -228,11 +226,11 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 8 = " + result);
+        Timber.d("result Sector 8 = %s", result);
         return result;
     }
 
-    private boolean checkBlockNine() {
+    private boolean checkSectorNine() {
         boolean result = true;
         for (int x = 6; x < 9; x++) {
             for (int y = 6; y < 9; y++) {
@@ -241,7 +239,7 @@ public class PlayingField {
                 }
             }
         }
-        Log.d("blocksCheck", "result block 9 = " + result);
+        Timber.d("result Sector 9 = %s", result);
         return result;
     }
 
@@ -279,22 +277,32 @@ public class PlayingField {
         return true;
     }
 
-    public void clearRowsAndBlocks(FilledRows fr, FilledBlocks fb) {
+    public void clearRowsAndBlocks(FilledRows fr, FilledSectors fb) {
+        filledBlocks = 0;
         for (int x : fr.getXlist()) {
             for (int y = 0; y < blocks; y++) {
+                if (get(x, y) == 1) {
+                    filledBlocks++;
+                }
                 set(x, y, 0);
             }
         }
         for (int y : fr.getYlist()) {
             for (int x = 0; x < blocks; x++) {
+                if (get(x, y) == 1) {
+                    filledBlocks++;
+                }
                 set(x, y, 0);
             }
         }
-        for (int block : fb.getFilledBlocks()) {
+        for (int block : fb.getFilledSectors()) {
             switch (block) {
                 case 1:
                     for (int x = 0; x < 3; x++) {
                         for (int y = 0; y < 3; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
@@ -302,6 +310,9 @@ public class PlayingField {
                 case 2:
                     for (int x = 3; x < 6; x++) {
                         for (int y = 0; y < 3; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
@@ -309,6 +320,9 @@ public class PlayingField {
                 case 3:
                     for (int x = 6; x < 9; x++) {
                         for (int y = 0; y < 3; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
@@ -316,6 +330,9 @@ public class PlayingField {
                 case 4:
                     for (int x = 0; x < 3; x++) {
                         for (int y = 3; y < 6; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
@@ -323,6 +340,9 @@ public class PlayingField {
                 case 5:
                     for (int x = 3; x < 6; x++) {
                         for (int y = 3; y < 6; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
@@ -330,6 +350,9 @@ public class PlayingField {
                 case 6:
                     for (int x = 6; x < 9; x++) {
                         for (int y = 3; y < 6; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
@@ -337,6 +360,9 @@ public class PlayingField {
                 case 7:
                     for (int x = 0; x < 3; x++) {
                         for (int y = 6; y < 9; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
@@ -344,6 +370,9 @@ public class PlayingField {
                 case 8:
                     for (int x = 3; x < 6; x++) {
                         for (int y = 6; y < 9; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
@@ -351,24 +380,20 @@ public class PlayingField {
                 case 9:
                     for (int x = 6; x < 9; x++) {
                         for (int y = 6; y < 9; y++) {
+                            if (get(x, y) ==1) {
+                                filledBlocks++;
+                            }
                             set(x, y, 0);
                         }
                     }
                     break;
             }
         }
-        view.clearRowsAndBlocks(fr, fb);
+        Timber.d("filled blocks = %s", filledBlocks);
     }
 
-    public int getFilled() {
-        int ret = 0;
-        for (int x = 0; x < blocks; x++) {
-            for (int y = 0; y < blocks; y++) {
-                int value = get(x, y);
-                if (value > 0 && value < 30) ret++;
-            }
-        }
-        return ret;
+    public int getFilledBlocks() {
+        return filledBlocks;
     }
 
     public void gameOver() {
@@ -391,16 +416,5 @@ public class PlayingField {
 
     public int getBlocks() {
         return blocks;
-    }
-
-    public void makeOldColor() {
-        for (int x = 0; x < blocks; x++) {
-            for (int y = 0; y < blocks; y++) {
-                if (matrix[x][y] == BlockTypes.ONE_COLOR) {
-                    matrix[x][y] = BlockTypes.OLD_ONE_COLOR;
-                }
-            }
-        }
-        view.oneColor();
     }
 }

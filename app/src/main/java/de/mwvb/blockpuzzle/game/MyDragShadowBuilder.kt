@@ -13,7 +13,7 @@ class MyDragShadowBuilder(view: GamePieceView, private val f: Float) : View.Drag
         val tv = this.view as GamePieceView
         if (tv.gamePiece == null) return // Programmschutz
 
-        outShadowSize?.set(tv.width * 2, tv.height * 2) // normale Größe
+        outShadowSize?.set(tv.width * 2, tv.height * 2) // normal size
 
         val ax = f * (tv.gamePiece.minX * br + brh)
         val ay = f * (tv.gamePiece.maxY * br + brh + br + br)

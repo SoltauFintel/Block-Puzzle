@@ -7,7 +7,6 @@ import de.mwvb.blockpuzzle.block.BlockTypes;
 
 public class GamePieceParser {
     private final BlockTypes blockTypes = new BlockTypes(null);
-    // TO-DO Denkbar wäre auch noch eine Maximalpunktzahl.
 
     public List<GamePiece> parse(String definition) {
         final GPParseData data = new GPParseData();

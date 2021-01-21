@@ -4,10 +4,8 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -38,13 +36,10 @@ public class PlayingFieldView extends View implements IPlayingFieldView {
     Paint paint;
     private final SoundService soundService = new SoundService();
     private FilledRows filledRows;
-    private FilledBlocks filledBlocks;
+    private FilledSectors filledBlocks;
     private int mode = 0;
     private final IBlockDrawer empty = new EmptyBlockDrawer(this);
     private IBlockDrawer grey;
-    private IBlockDrawer bd30;
-    private IBlockDrawer bd31;
-    private IBlockDrawer bd32;
     private BlockTypes blockTypes = new BlockTypes(this);
     private PlayingField playingField;
     private final BlockDrawParameters p = new BlockDrawParameters();
@@ -70,9 +65,6 @@ public class PlayingFieldView extends View implements IPlayingFieldView {
         paint = new Paint();
 
         grey = ColorBlockDrawer.byRColor(this, R.color.colorGrey, R.color.colorGrey_i, R.color.colorGrey_ib);
-        bd30 = new ColorBlockDrawer(this, getResources().getColor(R.color.explosion30));
-        bd31 = new ColorBlockDrawer(this, getResources().getColor(R.color.explosion31));
-        bd32 = new ColorBlockDrawer(this, getResources().getColor(R.color.explosion32));
     }
 
     @Override
@@ -124,29 +116,8 @@ public class PlayingFieldView extends View implements IPlayingFieldView {
             };
         }
         final BlockDrawerStrategy std = getStdMatrixGet();
-        if (filledRows != null || filledBlocks != null) { // row clearing mode
-            return new BlockDrawerStrategy() {
-                @Override
-                public IBlockDrawer get(int x, int y) {
-                        if (filledRows.containsX(x) || filledRows.containsY(y)|| !filledBlocks.getFilledBlocks().isEmpty()) {
-                            switch (mode) {
-                                case 30:
-                                    return bd30;
-                                case 31:
-                                    return bd31;
-                                case 32:
-                                    return bd32;
-                                default:
-                                    return empty;
-                            }
-                        } else {
-                            return std.get(x, y);
-                        }
-                }
-            };
-        } else {
-            return std;
-        }
+        return std;
+
     }
 
     private BlockDrawerStrategy getStdMatrixGet() {
@@ -158,38 +129,6 @@ public class PlayingFieldView extends View implements IPlayingFieldView {
                 return empty;
             }
         };
-    }
-
-    @Override
-    public void clearRowsAndBlocks(final FilledRows filledRows, final FilledBlocks filledBlocks) {
-        new RowExplosion().clearRows(filledRows, filledBlocks, this);
-    }
-
-    // called by RowExplosion
-    void setFilledRows(FilledRows fr) {
-        this.filledRows = fr;
-    }
-    void setFilledBlocks (FilledBlocks fb) {
-        this.filledBlocks = fb;
-    }
-
-    // called by RowExplosion
-    void drawmode(int mode) {
-        drawmode(mode, false, false);
-    }
-
-    // called by RowExplosion
-    void drawmode(int mode, boolean playClearSound, boolean bigClearSound) {
-        this.mode = mode;
-        draw();
-        if (playClearSound) {
-            soundService.clear(bigClearSound);
-        }
-    }
-
-    @Override
-    public void oneColor() {
-        soundService.oneColor();
     }
 
     @Override

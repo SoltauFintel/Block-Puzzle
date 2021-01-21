@@ -7,7 +7,7 @@ import de.mwvb.blockpuzzle.gamepiece.INextGamePiece;
 import de.mwvb.blockpuzzle.gamepiece.RandomGamePiece;
 import de.mwvb.blockpuzzle.persistence.GamePersistence;
 import de.mwvb.blockpuzzle.persistence.IPersistence;
-import de.mwvb.blockpuzzle.playingfield.FilledBlocks;
+import de.mwvb.blockpuzzle.playingfield.FilledSectors;
 import de.mwvb.blockpuzzle.playingfield.FilledRows;
 import de.mwvb.blockpuzzle.playingfield.PlayingField;
 import de.mwvb.blockpuzzle.playingfield.QPosition;
@@ -23,8 +23,6 @@ public class Game {
     // Stammdaten (read only)
     public static final int blocks = 9;
     private final BlockTypes blockTypes = new BlockTypes(null);
-    public static final int GPB_SCORE_FACTOR = 1;
-    public static final int HITS_SCORE_FACTOR = 10;
 
     // Zustand
     protected final PlayingField playingField = new PlayingField(blocks);
@@ -155,7 +153,7 @@ public class Game {
     }
 
     /**
-     * Drop Aktion für Spielfeld oder Parking
+     * Drop action for gameField or parking
      * <p>
      * Throws DoesNotWorkException
      */
@@ -165,7 +163,7 @@ public class Game {
         }
         boolean ret;
         if (targetIsParking) {
-            ret = holders.park(index); // Drop Aktion für Parking Area
+            ret = holders.park(index); // Drop action for Parking Area
         } else {
             ret = place(index, teil, xy);
         }
@@ -198,15 +196,13 @@ public class Game {
 
             // Are there filled rows?
             FilledRows fr = playingField.getFilledRows();
-            FilledBlocks fb = playingField.getFilledBlocks();
-
-            // increase score
-            score += piece.getScores() * getGamePieceBlocksScoreFactor() + fr.getHits() * getHitsScoreFactor();
-            rowsAdditionalBonus(fr.getXHits(), fr.getYHits());
+            FilledSectors fb = playingField.getFilledSectors();
 
             // auto-gravity
             playingField.clearRowsAndBlocks(fr, fb);
-            // Action wird erst wenige Millisekunden später fertig!
+
+            // increase score
+            score += (int) ((playingField.getFilledBlocks()*10) * getScoreFactor());
 
             int delta = score - scoreBefore;
             gape.saveDelta(delta);
@@ -216,64 +212,39 @@ public class Game {
         return ret;
     }
 
-    protected int getGamePieceBlocksScoreFactor() {
-        return GPB_SCORE_FACTOR;
+    private double getScoreFactor() {
+        double scoreFactor = 1;
+        if (playingField.getFilledBlocks()>9 && playingField.getFilledBlocks() < 19) {
+            scoreFactor = 1.5;
+        } else if (playingField.getFilledBlocks()>18 && playingField.getFilledBlocks() < 31) {
+            scoreFactor = 2;
+        } else if (playingField.getFilledBlocks()>30) {
+            scoreFactor = 3;
+        }
+        return scoreFactor;
     }
 
-    protected int getHitsScoreFactor() {
-        return HITS_SCORE_FACTOR;
-    }
-
-    protected void rowsAdditionalBonus(int xrows, int yrows) {
-        switch (xrows + yrows) {
-            case 0:
-            case 1:
-                break; // 0-1 kein Bonus
-            // Bonuspunkte wenn mehr als 2 Rows gleichzeitig abgeräumt werden.
-            // Fällt mir etwas schwer zu entscheiden wieviel Punkte das jeweils wert ist.
-            case 2:
-                score += 12;
-                break;
-            case 3:
-                score += 17;
-                break;
-            case 4:
-                score += 31;
-                break;
-            case 5:
-                score += 44;
-                break;
-            default:
-                score += 22;
-                break;
-        }
-        if (xrows > 0 && yrows > 0) {
-            score += 10;
-        }
-        // TODO Reihe mit gleicher Farbe (ohne oldOneColor) könnte weiteren Bonus auslösen.
-    }
-
-    private void fewGamePiecesOnThePlayingField() {
-        if (!emptyScreenBonusActive) {
-            return;
-        }
-        // Es gibt einen Bonus, wenn nach dem Abräumen von Rows nur noch wenige Spielsteine auf dem Spielfeld sind.
-        int bonus = 0;
-        switch (playingField.getFilled()) {
-            case 0:
-                bonus = 444;
-                break;
-            case 1:
-                bonus = 111;
-                break;
-        }
-        if (bonus > 0) {
-            score += bonus;
-            emptyScreenBonusActive = false;
-            gape.get().saveEmptyScreenBonusActive(emptyScreenBonusActive);
-            view.playSound(2); // play sound "empty screen bonus"
-        }
-    }
+//    private void fewGamePiecesOnThePlayingField() {
+//        if (!emptyScreenBonusActive) {
+//            return;
+//        }
+//        // Es gibt einen Bonus, wenn nach dem Abräumen von Rows nur noch wenige Spielsteine auf dem Spielfeld sind.
+//        int bonus = 0;
+//        switch (playingField.getFilled()) {
+//            case 0:
+//                bonus = 444;
+//                break;
+//            case 1:
+//                bonus = 111;
+//                break;
+//        }
+//        if (bonus > 0) {
+//            score += bonus;
+//            emptyScreenBonusActive = false;
+//            gape.get().saveEmptyScreenBonusActive(emptyScreenBonusActive);
+//            view.playSound(2); // play sound "empty screen bonus"
+//        }
+//    }
 
     /**
      * check for game over

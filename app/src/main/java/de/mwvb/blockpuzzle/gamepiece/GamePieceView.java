@@ -86,9 +86,6 @@ public class GamePieceView extends View implements IGamePieceView {
             br /= 2;
         }
         p.setBr(br);
-        if (parking && !dragMode) {
-            canvas.drawRect(0, 0, br * GamePiece.max * f, br * GamePiece.max * f, p_parking);
-        }
         if (gamePiece != null) {
             for (int x = 0; x < GamePiece.max; x++) {
                 for (int y = 0; y < GamePiece.max; y++) {
@@ -131,18 +128,6 @@ public class GamePieceView extends View implements IGamePieceView {
     public boolean performClick() {
         // wegen Warning in MainActivity.initClickListener()
         return super.performClick();
-    }
-
-    public void onDragEnter() {
-        if (gamePiece == null) {
-            p_parking.setColor(getResources().getColor(R.color.colorParkingHover));
-            draw();
-        }
-    }
-
-    public void onDragLeave() {
-        initParkingAreaColor();
-        draw();
     }
 
     private void initParkingAreaColor() {

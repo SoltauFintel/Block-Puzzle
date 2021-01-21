@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\86fe8d4c8db9a0272b73d4c05fe12fa2\jetified-core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\0979ff59de54001855537494406ab5b8\navigation-fragment-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\ef76e3e836edeba77d10eb61b582c245\navigation-ui-ktx-2.1.0\AndroidManifest.xml:17:1-24:12
@@ -56,25 +56,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ChamP\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\77bab16c5eb88f0e4b7a8121f38b371c\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\e187fd287e6038095250409f52b2748d\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\3904b56a3e0d8fc171ad938abb797d6a\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
 	package
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:3:5-34
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:1-57:12
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:5:5-55:19
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:5:5-55:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\f84f7e3fa5b0eb69b59a7e5b9ed492ac\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\f84f7e3fa5b0eb69b59a7e5b9ed492ac\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\35c6d4708d1a8883898fc8a8d987a4a3\constraintlayout-2.0.0\AndroidManifest.xml:9:5-20
@@ -92,105 +92,105 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ch
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\e0b51136e2865ee74899888b480c3076\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:6:9-28
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:6:9-28
 activity#de.mwvb.blockpuzzle.StartScreenActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:13:9-22:20
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:13:9-22:20
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:15:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:15:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:16:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:16:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:14:13-48
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:14:13-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:20:27-74
 activity#de.mwvb.blockpuzzle.BridgeActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:23:9-26:72
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:23:9-26:72
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:25:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:25:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:26:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:26:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:24:13-43
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:24:13-43
 activity#de.mwvb.blockpuzzle.NavigationActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:27:9-30:72
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:27:9-30:72
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:29:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:29:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:30:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:30:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:28:13-47
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:28:13-47
 activity#de.mwvb.blockpuzzle.MainActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:31:9-34:72
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:31:9-34:72
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:33:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:33:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:34:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:34:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:32:13-41
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:32:13-41
 activity#de.mwvb.blockpuzzle.DataMarketActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:35:9-38:72
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:35:9-38:72
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:37:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:37:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:38:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:38:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:36:13-47
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:36:13-47
 activity#de.mwvb.blockpuzzle.PlayerNameActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:39:9-42:72
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:39:9-42:72
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:41:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:41:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:42:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:42:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:40:13-47
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:40:13-47
 activity#de.mwvb.blockpuzzle.developer.DeveloperActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:43:9-46:72
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:43:9-46:72
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:45:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:45:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:46:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:46:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:44:13-56
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:44:13-56
 activity#de.mwvb.blockpuzzle.SelectTerritoryActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:47:9-50:72
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:47:9-50:72
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:49:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:49:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:50:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:50:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:48:13-52
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:48:13-52
 activity#de.mwvb.blockpuzzle.InfoActivity
-ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:51:9-54:72
+ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:51:9-54:72
 	android:screenOrientation
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:53:13-49
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:53:13-49
 	android:theme
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:54:13-69
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:54:13-69
 	android:name
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:52:13-41
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml:52:13-41
 uses-sdk
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\86fe8d4c8db9a0272b73d4c05fe12fa2\jetified-core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\86fe8d4c8db9a0272b73d4c05fe12fa2\jetified-core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\0979ff59de54001855537494406ab5b8\navigation-fragment-ktx-2.1.0\AndroidManifest.xml:20:5-22:41
@@ -295,16 +295,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\ChamP\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\e187fd287e6038095250409f52b2748d\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\3904b56a3e0d8fc171ad938abb797d6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\3904b56a3e0d8fc171ad938abb797d6a\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ChamP\Desktop\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		ADDED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
+		INJECTED from D:\DOCs\Me\ANDROID\FSD\TEST\blockpuzzle\app\src\main\AndroidManifest.xml
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ChamP\.gradle\caches\transforms-2\files-2.1\322909aa35b65b2420aaae9d4538f950\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
 	android:authorities

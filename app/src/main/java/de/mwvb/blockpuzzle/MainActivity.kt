@@ -108,21 +108,21 @@ class MainActivity : AppCompatActivity(), IGameView {
                 DragEvent.ACTION_DROP -> dropped(event, targetIsParking)
                 DragEvent.ACTION_DRAG_ENTERED -> {
                     if (targetIsParking) {
-                        getGamePieceView(-1).onDragEnter();
+                        parking.setBackgroundResource(R.color.colorParkingHover)
                     }
                     true
                 }
                 DragEvent.ACTION_DRAG_LOCATION -> true
                 DragEvent.ACTION_DRAG_EXITED -> {
                     if (targetIsParking) {
-                        getGamePieceView(-1).onDragLeave();
+                        parking.setBackgroundResource(R.color.colorParking)
                     }
                     true
                 }
                 DragEvent.ACTION_DRAG_ENDED -> {
                     try {
                         if (targetIsParking) {
-                            getGamePieceView(-1).onDragLeave();
+                            parking.setBackgroundResource(R.color.colorParking)
                         }
                         // Da ich nicht weiß, welcher ausgeblendet ist, blende ich einfach alle ein.
                         getGamePieceView(1).endDragMode()
@@ -255,11 +255,7 @@ class MainActivity : AppCompatActivity(), IGameView {
     }
 
 
-    override fun showTerritoryName(resId: Int) {
-        val text = resources.getText(resId).trim()
-        territoryName.text = text
-        territoryName.visibility = if (text.isEmpty()) View.GONE else View.VISIBLE // hide label to save space
-    }
+
 
     override fun showToast(msg: String) {
         var msg2 = msg

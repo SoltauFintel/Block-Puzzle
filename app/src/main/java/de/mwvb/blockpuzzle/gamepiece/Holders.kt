@@ -42,12 +42,12 @@ class Holders {
         get(-1).gamePiece = null
     }
 
-    fun clearAll() {
-        get(1).gamePiece = null
-        get(2).gamePiece = null
-        get(3).gamePiece = null
-        clearParking()
-    }
+//    fun clearAll() {
+//        get(1).gamePiece = null
+//        get(2).gamePiece = null
+//        get(3).gamePiece = null
+//        clearParking()
+//    }
 
     fun isParkingFree(): Boolean {
         return get(-1).gamePiece == null;
